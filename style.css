@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+body{
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 169, 234);
+}
+
+.Currency {
+    width: 350px;
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0px rgb(90, 91, 94);
+}
+
+.Currency h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem) ;
+    color: hsla(226, 93%, 31%, 0.776);
+}
+
+.amountDiv{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.amountDiv label{
+    color: rgb(66, 66, 219);
+}
+#amount{
+    width: 100%;
+    border: none;
+    background-color: rgb(229, 244, 254);
+    border-radius: 2px;
+    padding: 4px;
+}
+
+
+.drop-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.drop-list label{
+    text-align: center;
+    color: rgb(163, 163, 20);
+}
+
+.form-one {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+}
+#from{
+    padding: 4px 2px;
+    border: none;
+    border-radius: 3px;
+    background-color:  rgb(247, 250, 182);
+    cursor: pointer;
+    transition: 0.1s;
+    color: rgb(121, 117, 11);
+    font-size: 1rem;
+}
+
+.form-two{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+}
+#to{
+    padding: 4px 2px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(247, 250, 182);
+    color: rgb(121, 117, 11);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.convertAmnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.convertAmnt button {
+    width: 200px;
+    padding: 3px 20px;
+    background-color: rgb(106, 182, 249);
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 245, 245);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.convertAmnt button:hover{
+    background-color: rgb(5, 131, 241);
+}
+.convertAmnt button:active {
+    background-color: rgb(127, 191, 244);
+    color: rgb(233, 235, 240);
+}
+
+#result{
+    width: 280px;
+    background-color: rgb(240, 250, 224);
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin-top: 20px;
+}
+#result h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.861);
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 440px) {
+    .Currency {
+        width: 250px;
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px 0px rgb(90, 91, 94);
+    }
+    
+    .Currency h1 {
+        font-size: clamp(1.5rem, 5vw, 2rem) ;
+        color: hsla(226, 93%, 31%, 0.776);
+    }
+    
+    img{
+        width: 100px;
+    }
+
+    .amountDiv{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .amountDiv label{
+        color: rgb(66, 66, 219);
+    }
+    #amount{
+        width: 80%;
+        border: none;
+        background-color: rgb(229, 244, 254);
+        border-radius: 2px;
+        padding: 4px;
+    }
+    
+    
+    .drop-list{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px 0px;
+    }
+    
+    .drop-list label{
+        text-align: center;
+        color: rgb(163, 163, 20);
+    }
+    
+    .form-one {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 80px;
+    }
+    #from{
+        padding: 4px 2px;
+        border: none;
+        border-radius: 3px;
+        background-color:  rgb(247, 250, 182);
+        cursor: pointer;
+        transition: 0.1s;
+        color: rgb(121, 117, 11);
+        font-size: 0.8rem;
+    }
+    
+    .form-two{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 80px;
+    }
+    #to{
+        padding: 4px 2px;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(247, 250, 182);
+        color: rgb(121, 117, 11);
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    .convertAmnt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .convertAmnt button {
+        width: 150px;
+        padding: 3px 20px;
+        background-color: rgb(106, 182, 249);
+        border: none;
+        border-radius: 4px;
+        color: rgb(255, 245, 245);
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .convertAmnt button:hover{
+        background-color: rgb(5, 131, 241);
+    }
+    .convertAmnt button:active {
+        background-color: rgb(127, 191, 244);
+        color: rgb(233, 235, 240);
+    }
+    
+    #result{
+        width: 240px;
+        background-color: rgb(240, 250, 224);
+        border-radius: 4px;
+        padding: 2px 5px;
+        margin-top: 20px;
+    }
+    #result h2 {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.861);
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+    }
+    
+}
